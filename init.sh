@@ -1,5 +1,9 @@
 #! /bin/sh
 
+/usr/local/bin/run_nfs.sh
+
+
+
 while true
 do
 
