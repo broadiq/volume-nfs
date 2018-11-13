@@ -1,6 +1,6 @@
 #! /bin/sh
 
-/usr/local/bin/run_nfs.sh
+/usr/local/bin/run_nfs.sh &
 
 
 
