@@ -1,10 +1,10 @@
 FROM gcr.io/google_containers/volume-nfs:0.8
 
 
-ADD init.sh .
-ADD permissions.sh .
+ADD run_nfs_briq.sh /usr/local/bin/
 
-RUN chmod +x init.sh
-RUN chmod +x permissions.sh
 
-#ENTRYPOINT ["/init.sh"]
+RUN chmod +x /usr/local/bin/run_nfs_briq.sh
+
+
+ENTRYPOINT ["/usr/local/bin/run_nfs_briq.sh"]
