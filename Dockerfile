@@ -7,4 +7,4 @@ ADD permissions.sh .
 RUN chmod +x init.sh
 RUN chmod +x permissions.sh
 
-ENTRYPOINT ["/init.sh"]
+#ENTRYPOINT ["/init.sh"]
