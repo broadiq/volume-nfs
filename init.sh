@@ -1,6 +1,6 @@
 #! /bin/sh
 
  
-/permissions.sh &
+#/permissions.sh &
 
 /usr/local/bin/run_nfs.sh
