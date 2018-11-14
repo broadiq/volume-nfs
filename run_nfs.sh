@@ -63,7 +63,13 @@ function start()
     echo "NFS started"
     showmount -e
 
-    chmod -R 777 /exports
+
+    for y in "$@"; do
+
+       chmod -R 777 $y
+       echo "chmod directory $y"
+
+    done
 }
 
 function stop()
