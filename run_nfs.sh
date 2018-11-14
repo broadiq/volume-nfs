@@ -31,7 +31,7 @@ function start()
         # fsid=0: needed for NFSv4
         # echo "$i *(rw,fsid=0,insecure,no_root_squash)" >> /etc/exports
         if [ -v gid ] ; then
-            chmod 777 $i && chgrp $gid $i
+            chmod 070 $i && chgrp $gid $i
         fi
         echo "Serving $i"
     done
@@ -62,6 +62,8 @@ function start()
     /usr/sbin/rpc.statd --no-notify
     echo "NFS started"
     showmount -e
+
+    chmod -R 777 /exports
 }
 
 function stop()
