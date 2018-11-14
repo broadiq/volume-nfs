@@ -33,7 +33,7 @@ function start()
         # move index.html to here
         /bin/cp /tmp/index.html $i/
         chmod 644 $i/index.html
-        chmod 777 -R $i
+        #chmod 777 -R $i
         echo "Serving $i"
     done
     # start rpcbind if it is not started yet
