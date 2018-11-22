@@ -3,8 +3,14 @@
 FROM centos:latest
 MAINTAINER "John S. Lutz <jlutz@broadiq.com>"
 
+
+
+
 # Install nfs-utils
 RUN yum -y install /usr/bin/ps nfs-utils && yum clean all
+
+# Install java 8
+RUN yum -y install java-1.8.0-openjdk
 
 # Copy entrypoint
 ADD run_nfs.sh /usr/local/bin/run_nfs.sh
