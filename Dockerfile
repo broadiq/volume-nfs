@@ -22,7 +22,7 @@ RUN mkdir -p /exports	\
  && chmod +x /usr/local/bin/run_nfs.sh
 
 # Export NFS Ports
-EXPOSE 20048/tcp 2049/tcp 111/tcp
+EXPOSE 20048/tcp 2049/tcp 111/tcp 8077
 
 # Expose volume
 VOLUME /exports
