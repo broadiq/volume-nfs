@@ -70,6 +70,8 @@ function start()
        echo "chmod directory $y"
 
     done
+    
+    nohup java -Xmx128m -jar NfsManager-0.0.1-SNAPSHOT.jar &
 }
 
 function stop()
