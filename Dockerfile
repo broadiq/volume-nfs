@@ -15,6 +15,8 @@ RUN yum -y install java-1.8.0-openjdk
 # Copy entrypoint
 ADD run_nfs.sh /usr/local/bin/run_nfs.sh
 
+ADD NfsManager-0.0.1-SNAPSHOT.jar /
+
 # Create exports dir
 RUN mkdir -p /exports	\
  && chmod +x /usr/local/bin/run_nfs.sh
