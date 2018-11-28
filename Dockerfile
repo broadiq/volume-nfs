@@ -21,6 +21,9 @@ ADD NfsManager-0.0.1-SNAPSHOT.jar /
 RUN mkdir -p /exports	\
  && chmod +x /usr/local/bin/run_nfs.sh
 
+RUN mkdir -p /tmp-briq 
+
+
 # Export NFS Ports
 EXPOSE 20048/tcp 2049/tcp 111/tcp 8077
 
