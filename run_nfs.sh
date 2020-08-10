@@ -71,7 +71,7 @@ function start()
 
     done
     
-    nohup java -Xmx510m -jar NfsManager-0.0.1-SNAPSHOT.jar &
+    nohup java -Xmx510m -XX:+UseG1GC -jar NfsManager-0.0.1-SNAPSHOT.jar &
 }
 
 function stop()
